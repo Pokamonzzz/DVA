@@ -10,7 +10,7 @@ public class Cameramove : MonoBehaviour
     
     [Header("Rotation Limits")]
     public float minVerticalAngle = -90f;
-    public float maxVerticalAngle = 90f;
+    public float maxVerticalAngle = 50f;
     
     [Header("Mouse Button")]
     public int mouseButton = 0; // 0 = Left Click, 1 = Right Click, 2 = Middle Click
