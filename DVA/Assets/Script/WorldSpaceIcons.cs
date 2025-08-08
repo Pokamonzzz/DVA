@@ -6,11 +6,18 @@ using UnityEngine.SceneManagement;
 public class WorldSpaceIcons : MonoBehaviour
 {
     public GameObject enter;
+    public GameObject exit;
 
-    public void enterMunch()
+    public void EnterMunch()
     {
         enter.SetActive(false);
         SceneManager.LoadScene("InMunch");
+    }
+
+    public void ExitMunch()
+    {
+        exit.SetActive(false);
+        SceneManager.LoadScene("OutMunch");
     }
     
     // Start is called before the first frame update

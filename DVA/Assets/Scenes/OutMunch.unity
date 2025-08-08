@@ -209,7 +209,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 908336772}
         m_TargetAssemblyTypeName: WorldSpaceIcons, Assembly-CSharp
-        m_MethodName: enterMunch
+        m_MethodName: EnterMunch
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -783,6 +783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enter: {fileID: 17790316}
+  exit: {fileID: 0}
 --- !u!4 &908336773
 Transform:
   m_ObjectHideFlags: 0
