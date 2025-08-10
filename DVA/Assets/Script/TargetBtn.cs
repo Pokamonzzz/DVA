@@ -9,23 +9,25 @@ public class TargetBtn : MonoBehaviour
 
     public void OnClick()
     {
-        if (alreadyClicked) 
-            return; // Ignore repeat clicks
+        Debug.Log($"{name} button clicked!"); // Debug log to confirm click
+
+        if (alreadyClicked)
+        {
+            Debug.Log($"{name} was already clicked, ignoring.");
+            return;
+        }
 
         alreadyClicked = true;
 
         if (checklistManager != null)
+        {
+            Debug.Log($"Registering click with {checklistManager.name}");
             checklistManager.RegisterClick();
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+        }
+        else
+        {
+            Debug.LogError("ChecklistManager is not assigned in TargetButton!");
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
