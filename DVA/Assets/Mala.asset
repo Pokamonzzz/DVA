@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stallName: Mala
   description: very nice
-  logo: {fileID: 0}
+  logo: {fileID: 21300000, guid: 4e8a90aad42a77e42a0f5d810bc80349, type: 3}
   recommendedFoods:
   - name: Mala
     icon: {fileID: 0}
