@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stallName: Mexican
   description: yes
-  logo: {fileID: 0}
+  logo: {fileID: 21300000, guid: 872234540e5278147b5da72d6a4108bc, type: 3}
   recommendedFoods:
   - name: yes
     icon: {fileID: 0}
