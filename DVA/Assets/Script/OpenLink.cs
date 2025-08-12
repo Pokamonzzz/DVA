@@ -4,21 +4,18 @@ using UnityEngine;
 
 public class OpenLink : MonoBehaviour
 {
-    public string url = "https://www.np.edu.sg/about-np/facilities/eat"; // Set the default URL to Google
+    [Tooltip("The URL to open when this button is clicked")]
+    public string url = "https://example.com";
 
-    public void OpenGoogleLink()
+    public void OpenURL()
     {
-        Application.OpenURL(url);
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (!string.IsNullOrEmpty(url))
+        {
+            Application.OpenURL(url);
+        }
+        else
+        {
+            Debug.LogWarning("URL is empty. Please assign a link in the inspector.");
+        }
     }
 }
